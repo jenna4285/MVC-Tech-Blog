@@ -1,6 +1,6 @@
-const { Blogs } = require('../models');
+const { Blog } = require('../models');
 
-const blogdata = [
+const blogData = [
   {
     title: 'HTML Blog',
     date_created: 'April 2, 2021 07:00:00',
@@ -27,6 +27,6 @@ const blogdata = [
   },
 ];
 
-const seedBlog = () => Blogs.bulkCreate(blogdata);
+const seedBlog = () => Blog.bulkCreate(blogData);
 
-module.exports = blogData;
+module.exports = seedBlog;
